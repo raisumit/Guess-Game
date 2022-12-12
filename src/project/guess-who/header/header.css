@@ -1,0 +1,23 @@
+/* header for game section start here */
+section header {
+    min-height: 120px;
+    color: white;
+    text-align: center;
+    background-color: rgba(43, 90, 30, 0.7);
+}
+
+section header .heading {
+    padding-top: 50px;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+}
+
+section header .heading h1 {
+    display: inline;
+    margin-right: 10px;
+}
+
+header img {
+    max-height: 30px;
+}
