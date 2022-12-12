@@ -1,0 +1,46 @@
+[
+    {
+        "name": "brenden eich",
+        "path": "/assets/guess-who/brenden-eich.jpg"
+    },
+    {
+        "name": "elon musk",
+        "path": "/assets/guess-who/elon-musk.webp"
+    },
+    {
+        "name": "kapil dev",
+        "path": "/assets/guess-who/kapil-dev.jpg"
+    },
+    {
+        "name": "linus travold",
+        "path": "/assets/guess-who/linus-travold.jpg"
+    },
+    {
+        "name": "major dhyan chand",
+        "path": "/assets/guess-who/major-dhyan-chand.jpg"
+    },
+    {
+        "name": "narendra modi",
+        "path": "/assets/guess-who/narendra-modi.jpg"
+    },
+    {
+        "name": "sachin tendulkar",
+        "path": "/assets/guess-who/sachin-tendulkar.jpg"
+    },
+    {
+        "name": "sir ratan tata",
+        "path": "/assets/guess-who/sir-ratan-tata.jpg"
+    },
+    {
+        "name": "srinivasa ramanujan",
+        "path": "/assets/guess-who/srinivasa-ramanujan.jpg"
+    },
+    {
+        "name": "sundar pichai",
+        "path": "/assets/guess-who/sundar-pichai.jpg"
+    },
+    {
+        "name": "tim berners lee",
+        "path": "/assets/guess-who/tim-berners-lee.jpg"
+    }
+]

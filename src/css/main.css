@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* header for game section start here */
+section header {
+    min-height: 120px;
+    color: white;
+    text-align: center;
+    background-color: rgba(43, 90, 30, 0.7);
+}
+
+section header .heading {
+    padding-top: 50px;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+}
+
+section header .heading h1 {
+    display: inline;
+    margin-right: 10px;
+}
+
+header img {
+    max-height: 30px;
+}
+
+/* header for game section ends here */
+
+/* navigation section starts here */
+nav {
+    background-color: rgb(248, 239, 228);
+    min-height: 40px;
+    text-align: center;
+}
+.nav-hover:hover{
+background-color: white;
+}
+.level{
+background-color: white;
+}
+@media screen and (min-width:767){
+
+    nav li:nth-child(2){
+        margin-left: 160px;
+    }
+    nav li:nth-child(3){
+        margin-right: 160px;
+    }
+}
+nav li {
+    padding: 10px;
+}
+nav li:nth-child(2) {
+    display: flex;
+    justify-content: space-between;
+}
+.nave-three:hover #select{
+    background-color: white;
+}
+nav ol {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav ol select {
+    border-style: none !important;
+    background-color: rgb(248, 239, 228);
+    outline: none;
+}
+
+/* navigation section starts here */
+/* question answer section style starts here */
+.hint.container {
+    text-align: center;
+    box-shadow: 5px 5px 16px #283c5cc4;
+    background-color: #283c5cc4;
+}
+.hint.container h2{
+    color: white;
+}
+
+.hint.container img {
+    margin: 20px 0;
+    max-width: 500px;
+    max-height: 300px;
+}
+
+.options.container {
+    width: 100%;
+    padding-top: 20px;
+    text-align: center;
+    margin: 0 auto;
+    height: 100vh;
+    background-color: rgb(248, 239, 228,0.4);
+    box-shadow: 10px 5px 30px rgba(48, 92, 50, 0.7);
+}
+
+.options-container {
+    display: flex;
+    width: 60%;
+    margin: 20px auto;
+    border-radius: 2rem;
+    box-shadow: 0 0 10px 12px 16px;
+    background-color: #f5f5f5;
+    flex-wrap: wrap;
+    /* max-height: 50%; */
+    /* border: 1px solid wheat; */
+}
+@media screen and (max-width:480px){
+    
+    .options-container{
+       width: 100%;
+   }
+}
+
+.guess {
+    /* color: wheat;
+    background-color: #ced7ef; */
+    min-height: 80px;
+    border-radius: 3rem;
+    width: 30%;
+    background-color: rgb(248, 239, 228,0.4);
+    text-align: center;
+    box-shadow: -5px 8px 9px;
+    margin: 10px auto;
+    /* border-radius: 50%; */
+}
+@media screen and (max-width:767px){
+    .options-container{
+        flex-direction: column;
+        align-content: flex-start;
+    }
+    .guess{
+        width: 100%;
+    }
+}
+.guess h2{
+    padding-top: 30px;
+}
+
+/* .guess:nth-child(2n) {
+    margin-left: 10vw;
+}
+
+.guess:nth-child(2n-1) {
+    margin-left: 10vw;
+} */
+
+.qa {
+    /* background: radial-gradient(black, transparent); */
+    height: 100vh;
+}
+
+/* question answer section style starts here */
