@@ -1,0 +1,41 @@
+nav {
+    background-color: rgb(248, 239, 228);
+    min-height: 40px;
+    text-align: center;
+}
+.nav-hover:hover{
+background-color: white;
+}
+.level{
+background-color: white;
+}
+@media screen and (min-width:767){
+
+    nav li:nth-child(2){
+        margin-left: 160px;
+    }
+    nav li:nth-child(3){
+        margin-right: 160px;
+    }
+}
+nav li {
+    padding: 10px;
+}
+nav li:nth-child(2) {
+    display: flex;
+    justify-content: space-between;
+}
+.nave-three:hover #select{
+    background-color: white;
+}
+nav ol {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav ol select {
+    border-style: none !important;
+    background-color: rgb(248, 239, 228);
+    outline: none;
+}

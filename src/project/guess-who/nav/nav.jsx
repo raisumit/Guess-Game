@@ -1,6 +1,6 @@
 import React, { useRef, useState, useEffect } from "react";
-
 const Nav = () => {
+    const [format, setFormate] =useState('img-w');
     const EasyLevel = useRef(null);
     const hardLevel = useRef(null);
    
@@ -12,7 +12,10 @@ const Nav = () => {
                 <li ref={hardLevel} onClick={setLevel} className="nav-link nav-hover"> Hard </li>
 
                 <li className="nav-link nave-three nav-hover">
-                    <select id="select">
+                    <select value={format} id="select" 
+                    onChange={(e) => {
+                        setFormate(e.target.value);
+                    }}>
                         <option value="w-img">Word To Image</option>
                         <option value="img-w">Image To Word</option>
                     </select>
