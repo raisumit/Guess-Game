@@ -1,0 +1,34 @@
+{
+    "hard": [
+        {
+            "name": "Narendra Hodi",
+            "path": "/assets/guess-who-options/narendra-modi.jpg"
+        },
+        {
+            "name": "Hodi narendra",
+            "path": "/assets/guess-who-options/narendra-modi.jpg"
+        },
+        {
+            "name": "Chor narendra",
+            "path": "/assets/guess-who-options/narendra-modi.jpg"
+        },
+        {
+            "name":  "Narendra Chor",
+            "path": "/assets/guess-who-options/narendra-modi.jpg"
+        },
+        {
+            "name": "JumlaBaz narendra",
+            "path": "/assets/guess-who-options/narendra-modi.jpg"
+        }
+    ],
+    "easy": [
+        {
+            "name":  "Narendra Chor",
+            "path": "/assets/guess-who-options/narendra-modi.jpg"
+        },
+        {
+            "name": "JumlaBaz narendra",
+            "path": "/assets/guess-who-options/narendra-modi.jpg"
+        }
+    ]
+}

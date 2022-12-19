@@ -1,0 +1,34 @@
+{
+    "hard": [
+        {
+            "name": "Mark ZuckerBerg",
+            "path": "/assets/guess-who-options/mark-zukerburg.jpg"
+        },
+        {
+            "name": "satya nadela",
+            "path": "/assets/guess-who-options/satya-nadella.jpg"
+        },
+        {
+            "name": "Elon Musk",
+            "path": "/assets/guess-who-options/elon-musk.webp"
+        },
+        {
+            "name": "Shiv Nadar",
+            "path": "/assets/guess-who-options/shiv-nadar.jpg"
+        },
+        {
+            "name": "S. GopalKrishnan",
+            "path": "/assets/guess-who-options/s-gopal-krishnan.jpg"
+        }
+    ],
+    "easy": [
+        {
+            "name": "Shiv Nadar",
+            "path": "/assets/guess-who-options/shiv-nadar.jpg"
+        },
+        {
+            "name": "satya nadela",
+            "path": "/assets/guess-who-options/satya-nadella.jpg"
+        }
+    ]
+}

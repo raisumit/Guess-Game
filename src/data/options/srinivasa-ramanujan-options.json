@@ -1,0 +1,34 @@
+{
+    "hard": [
+        {
+            "name": "Sumit Sarkar",
+            "path": "/assets/guess-who-options/"
+        },
+        {
+            "name": "M. V. Seetharamiah",
+            "path": "/assets/guess-who-options/"
+        },
+        {
+            "name": "Baikuntha Nath Sen",
+            "path": "/assets/guess-who-options/"
+        },
+        {
+            "name": "C. V. Rama",
+            "path": "/assets/guess-who-options/"
+        },
+        {
+            "name": "Kasibhatta Brahmaiah Sastry",
+            "path": "/assets/guess-who-options/"
+        }
+    ],
+    "easy": [
+        {
+            "name": "Sumit Sarkar",
+            "path": "/assets/guess-who-options/"
+        },
+        {
+            "name": "C. V. Rama",
+            "path": "/assets/guess-who-options/"
+        }
+    ]
+}
