@@ -1,0 +1,34 @@
+{
+    "hard": [
+        {
+            "name":"Kapil Dev",
+            "path":"/assets/guess-who-options/kapil-dev.jpg"
+        },
+        {
+            "name":"Milkha Singh",
+            "path":"/assets/guess-who-options/milkha-singh.jpg"
+        },
+        {
+            "name":"Sunil Chhetri",
+            "path":"/assets/guess-who-options/hsunil-chhetri.jpg"
+        },
+        {
+            "name":"Roger Binny",
+            "path":"/assets/guess-who-options/roger-binny"
+        },
+        {
+            "name":"Syed Kirmani",
+            "path":"/assets/guess-who-options/sayed-kirmani.jpg"
+        } 
+    ],
+    "easy": [
+        {
+            "name":"Roger Binny",
+            "path":"/assets/guess-who-options/roger-binny"
+        },
+        {
+            "name":"Syed Kirmani",
+            "path":"/assets/guess-who-options/sayed-kirmani.jpg"
+        } 
+    ]
+}

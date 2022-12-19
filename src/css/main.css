@@ -98,6 +98,11 @@ nav ol select {
     background-color: rgb(248, 239, 228,0.4);
     box-shadow: 10px 5px 30px rgba(48, 92, 50, 0.7);
 }
+/* .options.container{
+    margin: 20px 0;
+    max-width: 500px;
+    max-height: 300px;
+} */
 
 .options-container {
     display: flex;

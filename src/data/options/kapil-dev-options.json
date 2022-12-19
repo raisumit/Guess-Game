@@ -1,0 +1,35 @@
+
+{
+    "hard": [
+        {
+            "name": "sachin tendulkar",
+            "path": "/assets/guess-who-options/sachin-tendulkar.jpg"
+        },
+        {
+            "name": "Virendra Shehwag",
+            "path": "/assets/guess-who-options/virendra-sehwag.jpg"
+        },
+        {
+            "name": "Cheteswar Pujara",
+            "path": "/assets/guess-who-options/cheteswar-pujara.jpg"
+        },
+        {
+            "name": "Shrishant",
+            "path": "/assets/guess-who-options/shrishant.jpg"
+        },
+        {
+            "name": "Wasim Akram",
+            "path": "/assets/guess-who-options/wasim-akram.jpg"
+        }
+    ],
+    "easy": [
+        {
+            "name": "Cheteswar Pujara",
+            "path": "/assets/guess-who-options/cheteswar-pujara.jpg"
+        },
+        {
+            "name": "Wasim Akram",
+            "path": "/assets/guess-who-options/wasim-akram.jpg"
+        }
+    ]
+}

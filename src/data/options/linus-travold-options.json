@@ -1,0 +1,34 @@
+{
+    "hard": [
+        {
+            "name": "Tim Berner Lee",
+            "path": "/assets/guess-who-options/tim-berners-lee.jpg"
+        },
+        {
+            "name": "Brenden Eich",
+            "path": "/assets/guess-who-options/brenden-eich.jpg"
+        },
+        {
+            "name": "Bob",
+            "path": "/assets/guess-who-options/bob.jpg"
+        },
+        {
+            "name": "Douglas Crockford",
+            "path": "/assets/guess-who-options/dougles-crockford.jpg"
+        },
+        {
+            "name": "Kyle simpson",
+            "path": "/assets/guess-who-options/kyle-simpson.jpg"
+        }
+    ],
+    "easy": [
+        {
+            "name": "Douglas Crockford",
+            "path": "/assets/guess-who-options/dougles-crockford.jpg"
+        },
+        {
+            "name": "Kyle simpson",
+            "path": "/assets/guess-who-options/kyle-simpson.jpg"
+        }
+    ]
+}

@@ -1,0 +1,34 @@
+{
+    "hard": [
+        {
+            "name": "Shiv Nadar",
+            "path": "/assets/guess-who-options/shiv-nadar.jpg"
+        },
+        {
+            "name": "Azim PremJi",
+            "path": "/assets/guess-who-options/azim-premji.jpg"
+        },
+        {
+            "name": "Nandan Nilekani",
+            "path": "/assets/guess-who-options/nandan-nikelman.jpg"
+        },
+        {
+            "name": "S. Gopalkrishna",
+            "path": "/assets/guess-who-options/s-gopal-krishnan.jpg"
+        },
+        {
+            "name": "Nr Narayan Murthy",
+            "path": "/assets/guess-who-options/nr-narayan-murthy.jpg"
+        }
+    ],
+    "easy": [
+        {
+            "name": "Azim PremJi",
+            "path": "/assets/guess-who-options/azim-premji.jpg"
+        },
+        {
+            "name": "Nr Narayan Murthy",
+            "path": "/assets/guess-who-options/nr-narayan-murthy.jpg"
+        }
+    ]
+}
