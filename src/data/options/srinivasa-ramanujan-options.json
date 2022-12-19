@@ -2,33 +2,33 @@
     "hard": [
         {
             "name": "Sumit Sarkar",
-            "path": "/assets/guess-who-options/"
+            "path": "/assets/guess-who-options/sumit-sarkar.jpg"
         },
         {
             "name": "M. V. Seetharamiah",
-            "path": "/assets/guess-who-options/"
+            "path": "/assets/guess-who-options/M-V-sitaramiya.jpg"
         },
         {
             "name": "Baikuntha Nath Sen",
-            "path": "/assets/guess-who-options/"
+            "path": "/assets/guess-who-options/baikunth-nath-sein.jpg"
         },
         {
             "name": "C. V. Rama",
-            "path": "/assets/guess-who-options/"
+            "path": "/assets/guess-who-options/cv-raman.png"
         },
         {
-            "name": "Kasibhatta Brahmaiah Sastry",
-            "path": "/assets/guess-who-options/"
+            "name": "A.P.J. Abdul kalam",
+            "path": "/assets/guess-who-options/apj-abdul-kalam.jpg"
         }
     ],
     "easy": [
         {
             "name": "Sumit Sarkar",
-            "path": "/assets/guess-who-options/"
+            "path": "/assets/guess-who-options/sumit-sarkar.jpg"
         },
         {
             "name": "C. V. Rama",
-            "path": "/assets/guess-who-options/"
+            "path": "/assets/guess-who-options/cv-raman.png"
         }
     ]
 }
