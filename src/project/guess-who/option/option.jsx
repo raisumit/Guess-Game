@@ -3,7 +3,6 @@ import { gameFormateContext } from "../../../app";
 
 const Option = (props) => {
     const formate = useContext(gameFormateContext);
-    console.log(formate);
     return (
         <div className="guess">
             {formate == 'img-w'? <h2>{props.option.name}</h2> : <img src={props.option.path}/>}

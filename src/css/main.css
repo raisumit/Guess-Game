@@ -81,6 +81,8 @@ nav ol select {
 }
 .hint.container h2{
     color: white;
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 
 .hint.container img {
@@ -97,6 +99,12 @@ nav ol select {
     height: 100vh;
     background-color: rgb(248, 239, 228,0.4);
     box-shadow: 10px 5px 30px rgba(48, 92, 50, 0.7);
+}
+.options-container img{
+   padding: 25px;
+   border-radius: 25%;
+    width: 80%;
+    height: 80%;
 }
 /* .options.container{
     margin: 20px 0;
@@ -126,6 +134,7 @@ nav ol select {
     /* color: wheat;
     background-color: #ced7ef; */
     min-height: 80px;
+    max-height: 250px;
     border-radius: 3rem;
     width: 30%;
     background-color: rgb(248, 239, 228,0.4);
@@ -141,6 +150,10 @@ nav ol select {
     }
     .guess{
         width: 100%;
+        
+    }
+    .guess img{
+        max-height: 180px;
     }
 }
 .guess h2{
