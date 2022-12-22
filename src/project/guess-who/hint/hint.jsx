@@ -1,5 +1,5 @@
 import React, {useContext} from "react";
-import selectedOptionContext from '../hint-option';
+// import selectedOptionContext from '../hint-option';
 import { gameFormateContext } from "../../../app";
 
 const Hint = (props) => {

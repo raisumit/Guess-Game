@@ -1,9 +1,9 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import options from '../../../data/option.json';
 import HintCompo from "../hint";
 import OptionsCompo from "../options";
 
-// export const selectedOptionContext = React.createContext();
+export const selectedOptionContext = React.createContext();
 const HintOption = (props) => {
     const [selectGuess, setSelectguess] = useState({});
     useEffect(() => {
@@ -13,11 +13,11 @@ const HintOption = (props) => {
     },[]);
     return (
         <section className="qa">
-            {/* <selectedOptionContext.Provider value={selectGuess}> */}
+            <selectedOptionContext.Provider value={selectGuess}>
             <HintCompo selectedOption={selectGuess}/>
             <OptionsCompo selectedOption={selectGuess} />
-            {/* </selectedOptionContext.Provider> */}
+            </selectedOptionContext.Provider>
         </section>
-    )
+    );
 }
 export default HintOption;
