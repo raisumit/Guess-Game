@@ -3,7 +3,6 @@ import OptionCompo from "../option";
 import { levelContext } from "../../../app";
 import { selectedOptionContext } from "../hint-option/hint-option";
 
-
 const Options = (props) => {
     const level = useContext(levelContext);
     const selectedOption = useContext(selectedOptionContext);
@@ -21,7 +20,7 @@ const Options = (props) => {
         function showOption() {
             const randomOptionsToShow = JSON.parse(localStorage.getItem('optionToShow'));
             const optionsArr = randomOptionsToShow[level];
-            optionsArr.splice(Math.floor(Math.random() * optionsArr.length), 0, selectedOption)
+            optionsArr.splice(Math.floor(Math.random() * optionsArr.length), 0, selectedOption);
             setOption(optionsArr);
         }
         async function getOptions(url) {
@@ -34,7 +33,6 @@ const Options = (props) => {
                 }).catch((err) => {
                     console.log(err);
                 });
-            console.log(randomOptionsToShow);
             const optionsArr = randomOptionsToShow[level];
             optionsArr.splice(Math.floor(Math.random() * optionsArr.length), 0, selectedOption)
             setOption(optionsArr);
@@ -46,7 +44,7 @@ const Options = (props) => {
             <div className="options-container">
                 {option.map((el, ind) => {
                     return (
-                        <OptionCompo key={ind} option={el} />
+                        <OptionCompo correctSelected={props.correctOptionSelect} key={ind} option={el} />
                     )
                 })}
             </div>

@@ -16,7 +16,6 @@ const App = () => {
                 <gameFormateContext.Provider value={format} >
                     <NavCompo setFormate={setFormate} getLevel={setLevel} />
                     <HintOptionCompo />
-
                 </gameFormateContext.Provider>
             </levelContext.Provider>
         </>

@@ -1,7 +1,6 @@
 import React, { useRef, useState, useEffect, useContext } from "react";
 import { gameFormateContext } from "../../../app";
 const Nav = (props) => {
-    // const [format, setFormate] =useState('img-w');
     const formate = useContext(gameFormateContext);
     const EasyLevel = useRef(null);
     const hardLevel = useRef(null);
