@@ -4,20 +4,29 @@ const Nav = (props) => {
     const formate = useContext(gameFormateContext);
     const EasyLevel = useRef(null);
     const hardLevel = useRef(null);
-   
+    function setLevel(e) {
+        if (e.target.innerText.toLowerCase() == 'hard') {
+            EasyLevel.current.classList.remove('level');
+            hardLevel.current.classList.add('level');
+        } else {
+            EasyLevel.current.classList.add('level');
+            hardLevel.current.classList.remove('level');
+        }
+        props.getLevel(e.target.innerText.toLowerCase());
+    }
     return (
         <nav>
             <ol className="nav">
-                <li  className="nav-link nav-hover">Reset</li>
+                <li className="nav-link nav-hover">Reset</li>
                 <li ref={EasyLevel} onClick={setLevel} className="nav-link nav-hover level"> Easy </li>
                 <li ref={hardLevel} onClick={setLevel} className="nav-link nav-hover"> Hard </li>
 
                 <li className="nav-link nave-three nav-hover">
-                    <select value={formate} id="select" 
-                    onChange={(e) => {
-                        props.setFormate(e.target.value);
-                       
-                    }}>
+                    <select value={formate} id="select"
+                        onChange={(e) => {
+                            props.setFormate(e.target.value);
+
+                        }}>
                         <option value="img-w">Image To Word</option>
                         <option value="w-img">Word To Image</option>
                     </select>
@@ -25,15 +34,5 @@ const Nav = (props) => {
             </ol>
         </nav>
     );
-    function setLevel(e) {
-        if (e.target.innerText.toLowerCase() == 'hard') {
-            EasyLevel.current.classList.remove('level');
-            hardLevel.current.classList.add('level');
-        }else{
-            EasyLevel.current.classList.add('level');
-            hardLevel.current.classList.remove('level');
-        }
-        props.getLevel(e.target.innerText.toLowerCase());
-    }
 }
 export default Nav;

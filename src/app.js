@@ -1,6 +1,7 @@
 import React, { createContext, useEffect, useState, useContext } from "react";
 import HeaderCompo from "./project/guess-who/header";
 import NavCompo from "./project/guess-who/nav";
+import TrackerCompo from "./project/guess-who/tracker";
 import HintOptionCompo from "./project/guess-who/hint-option";
 
 export const levelContext = React.createContext();
@@ -15,6 +16,7 @@ const App = () => {
             <levelContext.Provider value={level}>
                 <gameFormateContext.Provider value={format} >
                     <NavCompo setFormate={setFormate} getLevel={setLevel} />
+                    <TrackerCompo />
                     <HintOptionCompo />
                 </gameFormateContext.Provider>
             </levelContext.Provider>
