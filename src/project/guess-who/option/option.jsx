@@ -11,7 +11,6 @@ const Option = (props) => {
     function optionClickHandle(e) {
         if (appState.format == 'img-w' && e.target.innerText.toLowerCase() === selectedOption.name.toLowerCase()) {
             appState.settrackerState((prev) => {
-                clearInterval(appState.timer);
                 return {
                     ...prev,
                     questioncount: prev.questioncount + 1,
@@ -21,7 +20,6 @@ const Option = (props) => {
             props.correctSelected();
         } else if (e.target.dataset.name && e.target.dataset.name.toLowerCase() == selectedOption.name.toLowerCase()) {
             appState.settrackerState((prev) => {
-                clearInterval(appState.timer);
                 return {
                     ...prev,
                     questioncount: prev.questioncount + 1,
@@ -31,7 +29,6 @@ const Option = (props) => {
             props.correctSelected();
         } else {
             appState.settrackerState((prev) => {
-                clearInterval(appState.timer);
                 return {
                     life:prev.life-1,
                     questioncount: prev.questioncount + 1,

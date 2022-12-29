@@ -9,7 +9,7 @@ import HintOptionCompo from "./project/guess-who/hint-option";
 export const appStateContext = React.createContext();
 const App = () => {
     // let timer = useRef(undefined);
-    let [timer,setTimer] =useState(null);
+    let timer = useRef(null);
     const [level, setLevel] = useState('easy');
     const [format, setFormate] = useState('w-img');
     const [trackerState, settrackerState] = useState({
@@ -23,10 +23,11 @@ const App = () => {
     }, [trackerState.questioncount]);
     function handleTimer() {
         console.log(trackerState.time);
-        clearInterval(timer);
-        timer = setInterval((e) => {
+        clearInterval(timer.current);
+        timer.current = setInterval((e) => {
+            console.log(new Date().getSeconds())
             settrackerState((prev) => {
-                console.log(prev.time);
+                // console.log(prev.time);
                 if (prev.time <= 0) {
                     clearInterval(timer);
                     return { ...prev }
