@@ -1,10 +1,12 @@
 import React, { useContext, useEffect, useState } from "react";
 import OptionCompo from "../option";
-import { levelContext } from "../../../app";
+// import { levelContext } from "../../../app";
+import { appStateContext } from "../../../app";
 import { selectedOptionContext } from "../hint-option/hint-option";
 
 const Options = (props) => {
-    const level = useContext(levelContext);
+    // const level = useContext(levelContext);
+    const appState = useContext(appStateContext);
     const selectedOption = useContext(selectedOptionContext);
     const [option, setOption] = useState([]);
 
@@ -19,7 +21,7 @@ const Options = (props) => {
         }
         function showOption() {
             const randomOptionsToShow = JSON.parse(localStorage.getItem('optionToShow'));
-            const optionsArr = randomOptionsToShow[level];
+            const optionsArr = randomOptionsToShow[appState.level];
             optionsArr.splice(Math.floor(Math.random() * optionsArr.length), 0, selectedOption);
             setOption(optionsArr);
         }
@@ -33,11 +35,11 @@ const Options = (props) => {
                 }).catch((err) => {
                     console.log(err);
                 });
-            const optionsArr = randomOptionsToShow[level];
+            const optionsArr = randomOptionsToShow[appState.level];
             optionsArr.splice(Math.floor(Math.random() * optionsArr.length), 0, selectedOption)
             setOption(optionsArr);
         }
-    }, [level, selectedOption])
+    }, [appState.level, selectedOption])
 
     return (
         <div className="options container">

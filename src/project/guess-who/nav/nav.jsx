@@ -1,7 +1,9 @@
 import React, { useRef, useState, useEffect, useContext } from "react";
-import { gameFormateContext } from "../../../app";
+// import { gameFormateContext } from "../../../app";
+import { appStateContext } from "../../../app";
 const Nav = (props) => {
-    const formate = useContext(gameFormateContext);
+    // const formate = useContext(gameFormateContext);
+    const appState = useContext(appStateContext);
     const EasyLevel = useRef(null);
     const hardLevel = useRef(null);
     function setLevel(e) {
@@ -12,7 +14,7 @@ const Nav = (props) => {
             EasyLevel.current.classList.add('level');
             hardLevel.current.classList.remove('level');
         }
-        props.getLevel(e.target.innerText.toLowerCase());
+        appState.setLevel(e.target.innerText.toLowerCase());
     }
     return (
         <nav>
@@ -22,9 +24,9 @@ const Nav = (props) => {
                 <li ref={hardLevel} onClick={setLevel} className="nav-link nav-hover"> Hard </li>
 
                 <li className="nav-link nave-three nav-hover">
-                    <select value={formate} id="select"
+                    <select value={appState.format} id="select"
                         onChange={(e) => {
-                            props.setFormate(e.target.value);
+                            appState.setFormate(e.target.value);
 
                         }}>
                         <option value="img-w">Image To Word</option>

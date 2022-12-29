@@ -1,23 +1,23 @@
-import React from "react";
-const tracker = () => {
+import React, { useContext, useState } from "react";
+import { appStateContext } from "../../../app";
 
+const tracker = () => {
+    const appState = useContext(appStateContext);
     return (
         <section className="trackerSec">
             <ol>
                 <li>
                     <h4>Life Left</h4>
-                    <p>2</p>
+                    <p>{appState.trackerState.life}</p>
                 </li>
                 <li>
                     <h4>Time Left</h4>
-                    <p>1 sec</p>
+                    <p>{appState.trackerState.time}</p>
                 </li>
                 <li>
                     <h4>Question Answered</h4>
-                    <p>1</p>
+                    <p>{appState.trackerState.questioncount}</p>
                 </li>
-
-
             </ol>
         </section>
     );
