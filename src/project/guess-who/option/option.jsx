@@ -1,5 +1,4 @@
 import React, { useContext } from "react";
-// import { gameFormateContext } from "../../../app";
 import { appStateContext } from "../../../app";
 import { selectedOptionContext } from "../hint-option/hint-option";
 
@@ -25,14 +24,22 @@ const Option = (props) => {
                     questioncount: prev.questioncount + 1,
                     time: 10
                 }
-            })
+            });
             props.correctSelected();
         } else {
             appState.settrackerState((prev) => {
-                return {
-                    life:prev.life-1,
-                    questioncount: prev.questioncount + 1,
-                    time: 10
+                if (prev.life == 1) {
+                    return {
+                        life: prev.life - 1,
+                        questioncount: prev.questioncount + 1,
+                        time: 0
+                    }
+                } else {
+                    return {
+                        life: prev.life - 1,
+                        questioncount: prev.questioncount + 1,
+                        time: 10
+                    }
                 }
             });
             props.correctSelected();

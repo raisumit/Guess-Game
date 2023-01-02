@@ -46,6 +46,8 @@ const Options = (props) => {
             <div className="options-container">
                 {option.map((el, ind) => {
                     return (
+                        ind >=5 ?
+                        <OptionCompo ref={appState.optionpick} correctSelected={props.correctOptionSelect} key={ind} option={el} />:
                         <OptionCompo correctSelected={props.correctOptionSelect} key={ind} option={el} />
                     )
                 })}
