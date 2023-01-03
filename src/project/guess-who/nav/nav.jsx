@@ -27,7 +27,6 @@ const Nav = (props) => {
                     <select value={appState.format} id="select"
                         onChange={(e) => {
                             appState.setFormate(e.target.value);
-
                         }}>
                         <option value="img-w">Image To Word</option>
                         <option value="w-img">Word To Image</option>
