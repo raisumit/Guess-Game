@@ -84,7 +84,7 @@ nav ol select {
 /* tracker section css starts */
 .trackerSec{
     color:white;
-    background-color: rgba(0,0,0,0.6);
+    background-color: rgba(122 131 129 / 96%);
 }
 .trackerSec ol{
     display: flex;

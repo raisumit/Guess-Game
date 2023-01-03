@@ -19,7 +19,7 @@ const Nav = (props) => {
     return (
         <nav>
             <ol className="nav">
-                <li className="nav-link nav-hover">Reset</li>
+                <li onClick={(e) =>{window.location.reload();}} className="nav-link nav-hover">Reset</li>
                 <li ref={EasyLevel} onClick={setLevel} className="nav-link nav-hover level"> Easy </li>
                 <li ref={hardLevel} onClick={setLevel} className="nav-link nav-hover"> Hard </li>
 
